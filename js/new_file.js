@@ -35,6 +35,7 @@ window.onload = function() {
 	var zc = document.getElementById('Zc');
 	p6btn[5].style.display = "none";
 	var p1down = document.getElementById('p1Down');
+	var p6rtxt = document.querySelectorAll('.p6rtxt')[0];
 	p1down.onclick = function(){
 		num = 1;
 		movep();
@@ -225,6 +226,15 @@ window.onload = function() {
 		}
 		if(num == 5){
 			head.className = 'hd6';
+			setTimeout(function(){
+				p6rtxt.style.opacity = '1';
+				p6rtxt.style.marginLeft = '100px';
+			},500)
+			
+		}else{
+			
+			p6rtxt.style.opacity = '0';
+			p6rtxt.style.marginLeft = '300px';
 		}
 		if(num == 1 || num == 3){
 			head.className = 'header';
@@ -393,7 +403,7 @@ window.onload = function() {
 //			p6ul.style.marginTop = '0';
 //			p6ul.appendChild(p6ul.firstChild);
 //		});
-	},50);
+	},30);
 	
 	
 	

@@ -660,7 +660,9 @@ text-decoration: none;
     top: 50%;
     left: 50%;
     margin-top: -110px;
-    margin-left: 200px;
+    margin-left: 300px;
+    opacity: 0;
+    transition: 1s;
 }
 .p6rtxt h3 {
     font-size: 30px;
@@ -842,6 +844,15 @@ text-decoration: none;
 }
 #a_qq:hover {
 	background-position: -42px -42px;
+}
+#a_weixin:hover {
+	background-position: -84px -42px;
+}
+#a_photo:hover {
+	background-position: -126px -42px;
+}
+#a_dianhua:hover {
+	background-position: -168px -42px;
 }
 .hover_bd {
 	width: 140px;
